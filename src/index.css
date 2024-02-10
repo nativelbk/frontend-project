@@ -1,0 +1,88 @@
+/** @format */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.back-gradient1 {
+  border-width: 3px; /* Largeur de la bordure */
+  border-style: solid;
+  border-image: linear-gradient(
+    90deg,
+    rgba(25, 118, 210, 1) 0%,
+    rgba(255, 77, 109, 1) 44%
+  );
+}
+.gradient-border {
+  position: relative;
+}
+
+.gradient-border::before {
+  content: "";
+  background: linear-gradient(
+    147deg,
+    rgba(25, 118, 210, 1) 5%,
+    rgba(255, 77, 109, 1) 52%
+  );
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  margin: -3px;
+  border-radius: 999px;
+}
+.back-gradient2 {
+  background: linear-gradient(
+    90deg,
+    rgba(25, 118, 210, 1) 0%,
+    rgba(77, 79, 200, 1) 35%,
+    rgba(123, 44, 191, 1) 100%
+  );
+}
+
+.color-gradient2 {
+  background-image: linear-gradient(
+    90deg,
+    rgba(25, 118, 210, 1) 0%,
+    rgba(77, 79, 200, 1) 35%,
+    rgba(123, 44, 191, 1) 100%
+  );
+  -webkit-background-clip: text; /* Spécifique à WebKit pour la prise en charge de la clip-path */
+  background-clip: text; /* Appliquer le dégradé au texte */
+  color: transparent;
+}
+.my-card {
+  background: #1d3a57 !important;
+  height: auto !important;
+}
+.my-card span {
+  background: #1d3a57 !important;
+}
+.my-card-title {
+  color: white !important;
+  font-weight: 600 !important;
+  font-size: 20px !important;
+}
+.card-sub-title {
+  color: white !important;
+  font-size: 16px !important;
+  font-weight: 300 !important;
+  margin-top: 8px !important;
+}
+.eczmnE:not(.using-icon) {
+  border: 4px rgba(0, 0, 0, 0.589) solid;
+}
+.my-title {
+  color: white !important;
+  font-weight: 500 !important;
+}
+
+@media screen and (max-width: 640px) {
+  .my-card {
+    width: fit-content !important;
+  }
+  .emqEhB {
+    width: 75% !important;
+  }
+}

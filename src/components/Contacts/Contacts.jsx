@@ -3,6 +3,11 @@
 import Contact from "../Contact/Contact";
 import Title from "../Title/Title";
 import { motion } from "framer-motion";
+import { FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import { FaLocationDot } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
+
 export default function Conatcts() {
   return (
     <section className="min-h-screen  flex flex-col justify-center gap-10 w-fit mx-auto items-center ">
@@ -14,10 +19,22 @@ export default function Conatcts() {
           <h4 className="font-semibold text-[24px] ">GET IN TOUCH</h4>
           <p className="font-medium ">Let&apos;s work together</p>
           <div className="mt-8 flex flex-col gap-3 ">
-            <Contact />
-            <Contact />
-            <Contact />
-            <Contact />
+            <Contact
+              contactItem={"+261 32 57 637 96"}
+              icon={<FaPhoneAlt className="text-[30px] " />}
+            />
+            <Contact
+              contactItem={"ando.nirina.pro@gmail.com"}
+              icon={<MdEmail className="text-[30px] " />}
+            />
+            <Contact
+              contactItem={"Antananarivo, Madagascar"}
+              icon={<FaLocationDot className="text-[30px] " />}
+            />
+            <Contact
+              contactItem={"http://www.linkedin.com/in/ando-nirina"}
+              icon={<FaLinkedin className="text-[30px] " />}
+            />
           </div>
         </div>
         <motion.div

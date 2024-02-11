@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+#root {
+  scroll-snap-type: y proximity;
+}
+
 .back-gradient1 {
   border-width: 3px; /* Largeur de la bordure */
   border-style: solid;

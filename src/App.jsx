@@ -18,7 +18,7 @@ import Title from "./components/Title/Title";
 
 function App() {
   return (
-    <main className="flex relative flex-col gap-20">
+    <main className="flex cont relative flex-col gap-20">
       <About />
       <Experience />
       <Skills />

@@ -1,8 +1,14 @@
 /** @format */
+import { motion } from "framer-motion";
 
 export default function Project() {
   return (
-    <div className="h-[400px] max-[1008px]:w-[280px] max-[643px]:w-[330px]   max-[1144px]:w-[300px]  w-[330px] flex justify-center  py-4 bg-cardBackground rounded-3xl ">
+    <motion.div
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className="h-[400px] max-[1008px]:w-[280px] max-[643px]:w-[330px]   max-[1144px]:w-[300px]  w-[330px] flex justify-center  py-4 bg-cardBackground rounded-3xl "
+    >
       <div className=" w-[300px] max-[643px]:w-[300px] max-[1008px]:w-[260px] max-[1144px]:w-[270px] flex flex-col gap-4 ">
         <img src="/mademoiselleai.svg" />
         <div className="text-white flex flex-col gap-5 w-[95%] mx-auto ">
@@ -20,6 +26,6 @@ export default function Project() {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

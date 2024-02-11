@@ -1,10 +1,15 @@
 /** @format */
 
+import { motion } from "framer-motion";
 import Title from "../Title/Title";
 
 export default function AboutText() {
   return (
-    <section>
+    <motion.section
+      initial={{ opacity: 0, x: 100 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.5 }}
+    >
       <Title title={"About me"} />
       <div className="text-white mt-6">
         <h3 className=" font-bold ">I LOVE BEING A PYTHON DEVELOPER!</h3>
@@ -18,6 +23,6 @@ export default function AboutText() {
           evolving needs of users.
         </p>
       </div>
-    </section>
+    </motion.section>
   );
 }

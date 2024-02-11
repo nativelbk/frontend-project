@@ -1,14 +1,21 @@
 /** @format */
 // import { Link } from "react-scroll";
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy } from 'react-scroll';
-import { slide as Menu } from 'react-burger-menu'
-import { useState } from 'react';
-import { AiOutlineMenu } from 'react-icons/ai'
+import {
+  Link,
+  Button,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+} from "react-scroll";
+import { slide as Menu } from "react-burger-menu";
+import { useState } from "react";
+import { AiOutlineMenu } from "react-icons/ai";
 const Navbar = () => {
-  const [shouldOpen, setShouldOpen] = useState(false)
+  const [shouldOpen, setShouldOpen] = useState(false);
   return (
     <header className="z-30">
-      <div className="w-full blur1 mx-auto py-auto flex  fixed  py-5 bg-background items-center   z-10  md:gap-10  max-md:justify-between max-md:px-10 justify-around max-lg:w-full ">
+      <div className="w-full  blur1 mx-auto flex  fixed bg-background items-center   z-10  md:gap-10  max-md:justify-between max-sm:px-2 justify-around overflow-x-hidden py-3 ">
         <button className="px-3 bg-[#1976D2] hover:bg-sky-700 font-bold text-white py-1 rounded-md">
           ANDO NIRINA
         </button>
@@ -16,35 +23,37 @@ const Navbar = () => {
           {[
             {
               name: "HOME",
-              url: "home"
-
-            } ,
+              url: "home",
+            },
             {
               name: "ABOUT ME",
-              url: "about"
-
-            }, {
+              url: "about",
+            },
+            {
               name: "EXPERIENCES",
-              url: "experiences"
-            }, {
+              url: "experiences",
+            },
+            {
               name: "SKILLS",
-              url: "skills"
-            }, {
+              url: "skills",
+            },
+            {
               name: "PROJECTS",
-              url: "projects"
-            }, {
+              url: "projects",
+            },
+            {
               name: "CONTACT",
-              url: "contact"
-            }
+              url: "contact",
+            },
           ].map((item, i) => (
             // <a href={url} key={title} ></a>
             <Link
               activeClass="active"
-              activeStyle={{color: "#1976D2"}}
+              activeStyle={{ color: "#1976D2" }}
               to={item.url}
               spy={true}
               smooth={true}
-              offset={-100} 
+              offset={-100}
               duration={500}
               key={i}
               // onSetActive={handleSetActive}
@@ -52,45 +61,52 @@ const Navbar = () => {
             >
               {item.name}
             </Link>
-
           ))}
         </nav>
 
-        <div onClick={() => setShouldOpen(val => !val)} className="w-10 cursor-pointer h-10  flex justify-center items-center md:hidden ">
-          <AiOutlineMenu className='text-[32px] text-white' />
+        <div
+          onClick={() => setShouldOpen((val) => !val)}
+          className="w-10 cursor-pointer h-10  flex justify-center items-center md:hidden "
+        >
+          <AiOutlineMenu className="text-[32px] text-white" />
         </div>
       </div>
 
-      <div className='md:hidden'>
-        <Menu isOpen={shouldOpen} className='flex flex-col gap-4 bg-slate-900 ' width={200} right  >
+      <div className="md:hidden">
+        <Menu
+          isOpen={shouldOpen}
+          className="flex flex-col gap-4 bg-slate-900 "
+          width={200}
+          right
+        >
           {[
             {
               name: "HOME",
-              url: "home"
-
-            } , 
-             {
+              url: "home",
+            },
+            {
               name: "ABOUT ME",
-              url: "about"
-
-            }
-            , {
+              url: "about",
+            },
+            {
               name: "EXPERIENCES",
-              url: "experiences"
-            }, {
+              url: "experiences",
+            },
+            {
               name: "SKILLS",
-              url: "skills"
-            }, {
+              url: "skills",
+            },
+            {
               name: "PROJECTS",
-              url: "projects"
-            }, {
+              url: "projects",
+            },
+            {
               name: "CONTACT",
-              url: "contact"
-            }
+              url: "contact",
+            },
           ].map((item, i) => (
             // <a href={url} key={title} ></a>
-            <div className='py-3 flex pl-5'>
-
+            <div className="py-3 flex pl-5">
               <Link
                 activeClass="active"
                 to={item.url}
@@ -99,7 +115,7 @@ const Navbar = () => {
                 offset={-100}
                 duration={500}
                 key={i}
-                onClick={()=>{
+                onClick={() => {
                   setShouldOpen(false);
                 }}
                 className="rounded-lg cursor-pointer px-3 py-2 text-white  font-semibold text-sm hover:text-[#1976D2]"
@@ -107,7 +123,6 @@ const Navbar = () => {
                 {item.name}
               </Link>
             </div>
-
           ))}
         </Menu>
       </div>

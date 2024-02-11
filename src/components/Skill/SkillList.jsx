@@ -1,7 +1,8 @@
 /** @format */
-
+import { motion } from "framer-motion";
 import SkillTitle from "../Title/SkillTitle";
 import Skill from "./Skill";
+import { useEffect, useState } from "react";
 
 export default function SkillList({ skills, imageSrc, title }) {
   return (
@@ -11,17 +12,28 @@ export default function SkillList({ skills, imageSrc, title }) {
           <SkillTitle title={title} className="max-md:block hidden" />
         </div>
         <div className="flex items-center justify-center max-md:gap-0 max-md:flex-col-reverse max-[895px]:gap-10 gap-36">
-          <div>
+          <motion.div
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            viewport={{ once: true }}
+          >
             <SkillTitle title={title} className="max-md:hidden" />
             <div className="flex justify-between mt-4 flex-wrap max-w-[350px]">
               {skills.map((a, i) => (
                 <Skill key={i} skill={a} />
               ))}
             </div>
-          </div>
-          <div className=" w-[280px] ">
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, rotate: 90, y: 100 }}
+            whileInView={{ opacity: 1, rotate: 0, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className=" w-[280px] "
+            viewport={{ once: true }}
+          >
             <img src={imageSrc} />
-          </div>
+          </motion.div>
         </div>
       </div>
     </div>

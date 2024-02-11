@@ -2,7 +2,7 @@
 
 import Contact from "../Contact/Contact";
 import Title from "../Title/Title";
-
+import { motion } from "framer-motion";
 export default function Conatcts() {
   return (
     <section className="min-h-screen  flex flex-col justify-center gap-10 w-fit mx-auto items-center ">
@@ -20,9 +20,15 @@ export default function Conatcts() {
             <Contact />
           </div>
         </div>
-        <div className="w-[300px]">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.5 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
+          className="w-[300px]"
+        >
           <img src="/contact-image.svg" alt="" />
-        </div>
+        </motion.div>
       </div>
       <img src="/contact-pattern1.svg" className="absolute left-0 z-[-2]" />
     </section>

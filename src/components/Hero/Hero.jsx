@@ -17,10 +17,7 @@ const Hero = () => {
           <HeroImage />
         </div>
       </main>
-      {/* <img
-        src="/Achernar.svg"
-        className=" z-[-1] absolute right-[-20%] top-[-60px]   "
-      /> */}
+      <div className=" h-[300px] "></div>
       {/* <img
         src="/Element 06.svg"
         alt="element"

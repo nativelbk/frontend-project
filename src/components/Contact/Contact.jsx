@@ -8,7 +8,7 @@ export default function Contact({ contactItem, icon }) {
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
       viewport={{ once: true }}
-      className="flex  items-center gap-4 pb-1 mt-2 border-b-4 border-b-blue w-[360px]"
+      className="flex  items-center gap-4 pb-1 mt-2 border-b-4 max-[410px]:w-[300px] border-b-blue w-[360px]"
     >
       <div className=" h-10 w-10 rounded flex justify-center items-center bg-blue ">
         {icon}

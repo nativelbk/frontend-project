@@ -15,10 +15,13 @@ import Skills from "./components/Skills/Skills";
 import Timeline from "./components/Timeline/Timeline";
 import SkillTitle from "./components/Title/SkillTitle";
 import Title from "./components/Title/Title";
-
+import Navbar from "./components/Navbar/Navbar";
+import Hero from "./components/Hero/Hero";
 function App() {
   return (
     <main className="flex cont relative flex-col gap-20">
+      <Navbar/>
+      <Hero/>
       <About />
       <Experience />
       <Skills />

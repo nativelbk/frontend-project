@@ -15,10 +15,10 @@ export default function Project({ title, description, imageSrc, link }) {
         <div className="text-white flex flex-col gap-5 w-[95%] mx-auto ">
           <div>
             <p className="font-bold text-[24px]  ">{title}</p>
-            <span className="font-medium">{description}</span>
+            <span className="font-medium block min-h-[50px]">{description}</span>
           </div>
           <a
-            className="bg-blue w-fit px-4 py-3 rounded-full font-semibold "
+            className="bg-blue w-fit px-4 py-3 rounded-3xl font-semibold "
             href={link}
           >
             See Project

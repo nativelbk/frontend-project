@@ -21,11 +21,11 @@ const Hero = () => {
         src="/Achernar.svg"
         className=" z-[-1] absolute right-[-20%] top-[-60px]   "
       />
-      <img
+      {/* <img
         src="/Element 06.svg"
         alt="element"
         className="absolute top-0 left-[50%] w-9 "
-      />
+      /> */}
       <img
         src="/Element 09.svg"
         alt="element"

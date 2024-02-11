@@ -22,9 +22,12 @@ const HeroText = () => {
           PYTHON DEVELOPER-DATA-WEB
         </button>{" "}
         <br />
-        <button className="w-[100%] text-white bg-transparent border-2 border-white max-sm:text-[14px] h-[50px] rounded-md">
+        <a
+          href="https://drive.google.com/file/d/1Wpvku72k_UxEbR7gMS8XbtRcog8U6bkv/view?usp=sharing "
+          className="w-[100%] flex justify-center items-center text-white bg-transparent border-2 border-white max-sm:text-[14px] h-[50px] rounded-md"
+        >
           DOWNLOAD CV
-        </button>
+        </a>
       </div>
     </div>
   );

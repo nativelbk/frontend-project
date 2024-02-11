@@ -17,12 +17,10 @@ const Hero = () => {
           <HeroImage />
         </div>
       </main>
-      <section className="  w-[75%] max-sm:w-full gap-10 mx-auto m-0 flex flex-col justify-center">
-        <img
-          src="/Achernar.svg"
-          className=" z-[-1] absolute right-[-20%] top-[-60px]   "
-        />
-      </section>
+      <img
+        src="/Achernar.svg"
+        className=" z-[-1] absolute right-[-20%] top-[-60px]   "
+      />
       <img
         src="/Element 06.svg"
         alt="element"

@@ -24,6 +24,7 @@ export default function Conatcts() {
           <img src="/contact-image.svg" alt="" />
         </div>
       </div>
+      <img src="/contact-pattern1.svg" className="absolute left-0 z-[-2]" />
     </section>
   );
 }

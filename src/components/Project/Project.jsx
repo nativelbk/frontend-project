@@ -1,4 +1,5 @@
 /** @format */
+import { motion } from "framer-motion";
 
 export default function Project() {
   return (
@@ -20,6 +21,6 @@ export default function Project() {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

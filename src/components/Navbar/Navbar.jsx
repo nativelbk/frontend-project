@@ -106,7 +106,7 @@ const Navbar = () => {
             },
           ].map((item, i) => (
             // <a href={url} key={title} ></a>
-            <div className="py-3 flex pl-5">
+            <div key={i} className="py-3 flex pl-5">
               <Link
                 activeClass="active"
                 to={item.url}
@@ -114,7 +114,6 @@ const Navbar = () => {
                 smooth={true}
                 offset={-100}
                 duration={500}
-                key={i}
                 onClick={() => {
                   setShouldOpen(false);
                 }}

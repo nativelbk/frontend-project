@@ -76,13 +76,27 @@
 .my-title {
   color: white !important;
   font-weight: 500 !important;
+  word-break: break-all;
+  text-align: start !important;
 }
 
 @media screen and (max-width: 640px) {
+  .my-title {
+    color: white !important;
+    font-weight: 400 !important;
+  }
   .my-card {
     width: fit-content !important;
   }
   .emqEhB {
     width: 75% !important;
+  }
+  .bXpluN {
+    width: 50% !important;
+  }
+}
+@media screen and (max-width: 367px) {
+  .bXpluN {
+    width: 25% !important;
   }
 }

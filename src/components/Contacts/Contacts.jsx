@@ -24,6 +24,7 @@ export default function Conatcts() {
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
+          viewport={{ once: true }}
           className="w-[300px]"
         >
           <img src="/contact-image.svg" alt="" />

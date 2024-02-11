@@ -6,6 +6,7 @@ export default function AboutImage() {
     <motion.section
       initial={{ opacity: 0, x: -100, scale: 0.5 }}
       whileInView={{ opacity: 1, x: 0, scale: 1 }}
+      viewport={{ once: true }}
       transition={{ duration: 0.5 }}
       className="max-w-[350px] max-lg:w-[300px] "
     >

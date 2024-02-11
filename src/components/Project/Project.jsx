@@ -7,6 +7,7 @@ export default function Project() {
       initial={{ opacity: 0, y: 100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
       className="h-[400px] max-[1008px]:w-[280px] max-[643px]:w-[330px]   max-[1144px]:w-[300px]  w-[330px] flex justify-center  py-4 bg-cardBackground rounded-3xl "
     >
       <div className=" w-[300px] max-[643px]:w-[300px] max-[1008px]:w-[260px] max-[1144px]:w-[270px] flex flex-col gap-4 ">

@@ -9,6 +9,7 @@ export default function AboutText() {
       initial={{ opacity: 0, x: 100 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.5 }}
+      viewport={{ once: true }}
     >
       <Title title={"About me"} />
       <div className="text-white mt-6">

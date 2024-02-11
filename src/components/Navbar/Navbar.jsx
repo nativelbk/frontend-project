@@ -19,7 +19,7 @@ const Navbar = () => {
         <button className="px-3 bg-[#1976D2] hover:bg-sky-700 font-bold text-white py-1 rounded-md">
           ANDO NIRINA
         </button>
-        <nav className="space-x-4 flex max-md:hidden max-lg:space-x-2  ">
+        <nav className=" max-md:hidden ">
           {[
             {
               name: "HOME",
@@ -66,7 +66,7 @@ const Navbar = () => {
 
         <div
           onClick={() => setShouldOpen((val) => !val)}
-          className="w-10 cursor-pointer h-10  flex justify-center items-center md:hidden "
+          className="w-10 cursor-pointer h-10 flex justify-center items-center md:hidden "
         >
           <AiOutlineMenu className="text-[32px] text-white" />
         </div>

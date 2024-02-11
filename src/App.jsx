@@ -20,8 +20,8 @@ import Hero from "./components/Hero/Hero";
 function App() {
   return (
     <main className="flex cont relative flex-col gap-20">
-      <Navbar/>
-      <Hero/>
+      <Navbar />
+      <Hero />
       <About />
       <Experience />
       <Skills />

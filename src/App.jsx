@@ -19,8 +19,12 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 function App() {
   return (
-    <main className="flex cont relative flex-col gap-20">
+    <main className="flex overflow-x-hidden cont relative flex-col gap-20">
       <Navbar />
+      <img
+        src="/Achernar.svg"
+        className=" z-[-1] absolute right-[-20%]  top-[-60px]   "
+      />
       <Hero />
       <About />
       <Experience />

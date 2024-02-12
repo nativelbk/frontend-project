@@ -110,3 +110,9 @@
 .bm-burger-bars {
   width: 0 !important ;
 }
+
+.blr {
+  filter: blur(180px);
+  width: 500px;
+  height: 200px;
+}

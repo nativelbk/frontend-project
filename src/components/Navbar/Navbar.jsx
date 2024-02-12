@@ -16,8 +16,8 @@ const Navbar = () => {
   const handleOnClose = () => setShouldOpen(false);
   return (
     <header className="z-30">
-      <div className="w-full  blur1 mx-auto flex  fixed bg-background items-center   z-10  md:gap-10  max-md:justify-between max-sm:px-2 justify-around overflow-x-hidden py-3 ">
-        <button className="px-3 bg-[#1976D2] hover:bg-sky-700 font-bold text-white py-1 rounded-md">
+      <div className="w-full  blur1 mx-auto flex  fixed  items-center   z-10  md:gap-10  max-md:justify-between max-sm:px-5 max-md:px-10 justify-around overflow-x-hidden py-3 ">
+        <button className="px-3 bg-[#1976D2] hover:bg-sky-700 font-bold text-white py-2 rounded-md">
           ANDO NIRINA
         </button>
         <nav className=" max-md:hidden ">
@@ -54,7 +54,7 @@ const Navbar = () => {
               to={item.url}
               spy={true}
               smooth={true}
-              offset={-100}
+              offset={-30}
               duration={500}
               key={i}
               // onSetActive={handleSetActive}

@@ -19,18 +19,22 @@ import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 function App() {
   return (
-    <main className="flex overflow-x-hidden cont relative flex-col gap-20">
+    <main className="flex overflow-x-hidden  relative flex-col ">
       <Navbar />
+      <Hero/>
+      <About />
+      <Experience />
+      <img
+          src="/layer-blur-timeline.svg"
+          className=" z-[-2] absolute top-[20%] max-sm:top-[30%] left-[-20%] max-sm:left-[0%] "
+        />
+      <Skills />
+      <Projects />
+      <Conatcts />
       <img
         src="/Achernar.svg"
         className=" z-[-1] absolute right-[-20%]  top-[-60px]   "
       />
-      <Hero />
-      <About />
-      <Experience />
-      <Skills />
-      <Projects />
-      <Conatcts />
       <Footer />
     </main>
   );

@@ -6,17 +6,14 @@ import Title from "../Title/Title";
 
 export function Experience() {
   return (
-    <div className="min-h-screen" id="experiences">
+    <div className="min-h-[100vh] max-w-full overflow-hidden  relative flex items-center justify-center" id="experiences">
 
-      <div className={`${styles.paddingTittle} mb-8 max-sm:mb-3`}>
+      <section className="  max-w-[65%] max-lg:max-w-full max-md:max-w-[90%] max-sm:max-w-full  max-md:mx-auto  mx-auto  flex flex-col justify-center">
+        <div className="max-sm:ml-10">
         <Title title={"Experiences"} />
-      </div>
-      <section className=" relative w-[75%] max-sm:w-full gap-10 mx-auto m-0 flex flex-col justify-center">
-        <img
-          src="/layer-blur-timeline.svg"
-          className=" z-0 absolute left-[-20%] max-sm:left-[0%] "
-        />
-        <Timeline />
+
+        </div>
+          <Timeline />
       </section>
     </div>
   );

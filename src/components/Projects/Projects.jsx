@@ -6,12 +6,12 @@ import Title from "../Title/Title";
 
 export default function Projects() {
   return (
-    <div className="min-h-[80vh] " id="projects">
-      <div className={`${styles.paddingTittle} mb-8 max-sm:mb-3`}>
+    <div className="min-h-[100vh] max-w-full overflow-hidden  relative flex items-center justify-center" id="projects">
+      <section className=" max-w-[65%] max-lg:max-w-full max-md:max-w-[90%] max-sm:max-w-full gap-10 flex flex-col  justify-center ">
+      <div className={` max-lg:ml-10 max-md:ml-0 max-sm:mt-10 max-sm:mb-3`}>
         <Title title={"Project"} />
       </div>
-      <section className="w-fit mx-auto gap-10 flex flex-col  justify-center">
-        <div className="flex justify-center flex-wrap max-[863px]:w-fit max-[863px]:mx-auto  gap-3 max-sm:gap-10">
+        <div className="flex justify-center flex-nowrap max-md:flex-col max-lg:flex-wrap  max-lg:gap-6 max-[863px]:w-fit max-[863px]:mx-auto  gap-3 max-sm:gap-10">
           <Project
             title={"Mademoiselleai"}
             description={"A website with AI solutions and automates"}

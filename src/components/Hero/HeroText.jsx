@@ -4,7 +4,7 @@ import React from "react";
 import { styles } from "../../style";
 const HeroText = () => {
   return (
-    <div className="max-md:max-w-[400px] max-[410px]:max-w-[300px] max-md:px-5 ">
+    <div className="max-md:max-w-[400px]  max-[410px]:max-w-[400px] max-md:px-5 max-sm:px-0 ">
       <div>
         <h1
           className={`${styles.heroHeadText} max-[410px]:text-[32px]  font-bold`}
@@ -20,7 +20,7 @@ const HeroText = () => {
       <div className="mt-6 max-w-[400px] max-lg:max-w-[300px] max-md:max-w-[400px] ">
         <button className="w-[100%] text-white bg-blue  h-[50px] max-sm:text-[14px] rounded-md mb-6 hover:bg-indigo-500">
           PYTHON DEVELOPER-DATA-WEB
-        </button>{" "}
+        </button>
         <br />
         <a
           href="https://drive.google.com/file/d/1Wpvku72k_UxEbR7gMS8XbtRcog8U6bkv/view?usp=sharing "

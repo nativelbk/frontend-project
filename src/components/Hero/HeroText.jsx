@@ -14,7 +14,7 @@ const HeroText = () => {
         <h2
           className={`${styles.heroNameText} max-w-[500px] max-[375px]:text[24px] max-[410px]:text-[28px] font-bold`}
         >
-          I'm Ando Nirina RANDRIANAFY
+          I'm Ando Nirina RANDRIANJAFY
         </h2>
       </div>
       <div className="mt-6 max-w-[400px] max-lg:max-w-[300px] max-md:max-w-[400px] ">

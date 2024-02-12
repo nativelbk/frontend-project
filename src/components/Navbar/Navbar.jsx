@@ -13,6 +13,7 @@ import { useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 const Navbar = () => {
   const [shouldOpen, setShouldOpen] = useState(false);
+  const handleOnClose = () => setShouldOpen(false);
   return (
     <header className="z-30">
       <div className="w-full  blur1 mx-auto flex  fixed bg-background items-center   z-10  md:gap-10  max-md:justify-between max-sm:px-2 justify-around overflow-x-hidden py-3 ">
@@ -74,6 +75,7 @@ const Navbar = () => {
 
       <div className="md:hidden">
         <Menu
+          onClose={handleOnClose}
           isOpen={shouldOpen}
           className="flex flex-col gap-4 bg-slate-900 "
           width={200}

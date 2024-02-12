@@ -8,7 +8,7 @@ export default function Timeline() {
       title: "January 2024 - present . REMOTE",
       cardTitle: "AI Engineer",
       cardSubtitle:
-        "Design and development of chatbots, integration of GPT functionalitiesinto websites, creation of various automated tasks using Python.",
+        "Design and development of chatbots, integration of GPT functionalities into websites, creation of various automated tasks using Python.",
     },
     {
       title: "2023 . REMOTE",

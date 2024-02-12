@@ -6,7 +6,7 @@ import Title from "../Title/Title";
 
 export function Experience() {
   return (
-    <div className="min-h-[100vh] max-w-full overflow-hidden  relative flex items-center justify-center " id="experiences">
+    <div className="min-h-[100vh] max-w-full overflow-hidden max-md:mt-10 relative flex items-center justify-center " id="experiences">
 
       <section className="  max-w-[65%] max-lg:max-w-full max-md:max-w-[90%] max-sm:max-w-full  max-md:mx-auto  mx-auto  flex flex-col justify-center">
         <div className="absolute z-[-1]  left-[0]  ">

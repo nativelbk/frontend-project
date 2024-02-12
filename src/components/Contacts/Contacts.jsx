@@ -24,18 +24,22 @@ export default function Conatcts() {
               <Contact
                 contactItem={"+261 32 57 637 96"}
                 icon={<FaPhoneAlt className="text-[30px] " />}
+                type={"phone"}
               />
               <Contact
                 contactItem={"ando.nirina.pro@gmail.com"}
                 icon={<MdEmail className="text-[30px] " />}
+                type={"mail"}
               />
               <Contact
                 contactItem={"Antananarivo, Madagascar"}
                 icon={<FaLocationDot className="text-[30px] " />}
+                type={" "}
               />
               <Contact
                 contactItem={"http://www.linkedin.com/in/ando-nirina"}
                 icon={<FaLinkedin className="text-[30px] " />}
+                type={"linkedin"}
               />
             </div>
           </div>
@@ -48,7 +52,6 @@ export default function Conatcts() {
               rotate: 0,
             }}
             transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
             className="w-[400px] max-lg:w-[300px]"
           >
             <img src="/contact-image.svg" alt="" />

@@ -1,7 +1,7 @@
 /** @format */
 import { motion } from "framer-motion";
 
-export default function Contact({ contactItem, icon }) {
+export default function Contact({ contactItem, icon, type }) {
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -13,9 +13,30 @@ export default function Contact({ contactItem, icon }) {
       <div className=" h-10 w-10 rounded flex justify-center items-center bg-blue ">
         {icon}
       </div>
-      <span className=" font-semibold w-fit text-[16px] text-white ">
-        {contactItem}
-      </span>
+      {type === "mail" ? (
+        <a
+          href="mailto:ando.nirina.pro@gmail.com"
+          className=" font-semibold w-fit text-[16px] text-white "
+        >
+          {contactItem}
+        </a>
+      ) : type === "phone" ? (
+        <a
+          href="tel:+261325763796"
+          className=" font-semibold w-fit text-[16px] text-white "
+        >
+          {contactItem}
+        </a>
+      ) : type === "linkedin" ? (
+        <a
+          href="https://www.linkedin.com/in/ando-nirina"
+          className=" font-semibold w-fit text-[16px] text-white "
+        >
+          {contactItem}
+        </a>
+      ) : (
+        `${contactItem}`
+      )}
     </motion.div>
   );
 }

@@ -17,17 +17,46 @@ import SkillTitle from "./components/Title/SkillTitle";
 import Title from "./components/Title/Title";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
+import { motion } from "framer-motion";
+
 function App() {
   return (
     <main className="flex overflow-x-hidden  relative flex-col ">
       <Navbar />
-      <Hero/>
+      {/* <img
+        src="/Achernar.svg"
+        className=" z-[-1]  absolute right-[-20%]  top-[-60px]   "
+      /> */}
+      <div className="absolute z-[-1] top-16  right-[0]  ">
+        <motion.div
+          animate={{
+            background: ["#1976D2", "#FF4D6D"],
+            scale: [1, 0.95, 1.1],
+          }}
+          transition={{ duration: 3, repeat: Infinity, repeatType: "mirror" }}
+          className=" blr "
+        ></motion.div>
+        <motion.div
+          animate={{
+            background: ["#1976D2", "#152432"],
+            scale: [1, 0.95, 1.1],
+          }}
+          transition={{ duration: 3, repeat: Infinity, repeatType: "mirror" }}
+          className=" blr  "
+        ></motion.div>
+        <motion.div
+          animate={{
+            background: ["#1976D2", "#7B2CBF"],
+            scale: [1, 0.95, 1.1],
+          }}
+          transition={{ duration: 3, repeat: Infinity, repeatType: "mirror" }}
+          className=" blr  "
+        ></motion.div>
+      </div>
+      <Hero />
+      <Hero />
       <About />
       <Experience />
-      <img
-          src="/layer-blur-timeline.svg"
-          className=" z-[-2] absolute top-[20%] max-sm:top-[30%] left-[-20%] max-sm:left-[0%] "
-        />
       <Skills />
       <Projects />
       <Conatcts />

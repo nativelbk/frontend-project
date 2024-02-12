@@ -16,7 +16,6 @@ export default function SkillList({ skills, imageSrc, title }) {
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
-            viewport={{ once: true }}
           >
             <SkillTitle title={title} className="max-md:hidden" />
             <div className="flex justify-between mt-4 flex-wrap max-w-[350px]">
@@ -30,7 +29,6 @@ export default function SkillList({ skills, imageSrc, title }) {
             whileInView={{ opacity: 1, rotate: 0, y: 0 }}
             transition={{ duration: 0.5 }}
             className=" w-[280px] "
-            viewport={{ once: true }}
           >
             <img src={imageSrc} />
           </motion.div>

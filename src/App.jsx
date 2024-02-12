@@ -54,7 +54,6 @@ function App() {
         ></motion.div>
       </div>
       <Hero />
-      <Hero />
       <About />
       <Experience />
       <Skills />

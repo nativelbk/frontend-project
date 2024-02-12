@@ -19,7 +19,7 @@ export default function SkillList({ skills, imageSrc, title }) {
             viewport={{ once: true }}
           >
             <SkillTitle title={title} className="max-md:hidden" />
-            <div className="flex justify-between mt-4 flex-wrap max-w-[350px]">
+            <div className="flex justify-between gap-2 max-sm:gap-1  mt-4 flex-wrap max-w-[350px]  ">
               {skills.map((a, i) => (
                 <Skill key={i} skill={a} />
               ))}

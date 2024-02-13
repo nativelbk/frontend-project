@@ -5,10 +5,11 @@ import HeroText from "./HeroText";
 import HeroImage from "./HeroImage";
 const Hero = () => {
   return (
-    <div className="min-h-[100vh] max-w-full overflow-hidden relative flex max-md:mt-[100px] max-sm:mt-20  my-auto" id="home">
-      <main 
-        className="container px-10  flex flex-row justify-center items-center mx-auto  max-md:flex-col max-md:justify-center max-sm:mb-8" 
-      >
+    <div
+      className="min-h-[100vh]  max-w-full overflow-hidden relative flex max-md:mt-[100px] max-sm:mt-20 "
+      id="home"
+    >
+      <main className=" w-[2000px]  justify-around  flex flex-row max-lg:mx max-lg:justify-center items-center mx-auto max-md:flex-col  max-lg:px-8">
         <div className="max-md:flex">
           <HeroText />
         </div>
@@ -16,35 +17,37 @@ const Hero = () => {
           <HeroImage />
         </div>
       </main>
-      <div className=" h-[300px] "></div>
-      {/* <img
-        src="/Element 06.svg"
+      <img
+        src="/circle.svg"
         alt="element"
-        className="absolute top-0 left-[50%] w-9 "
+        className="absolute top-[30%] left-[50%] w-9 max-sm:hidden "
       />
       <img
-        src="/Element 09.svg"
+        src="/circle-fleche.svg"
         alt="element"
-        className="absolute z-[-1] left-[45%] bottom-4 w-9"
+        className="absolute z-[-1] left-[45%] bottom-4 w-9  max-sm:hidden"
       />
       <img
-        src="/Union - Copie.svg"
+        src="/etoile.svg"
         alt="element"
-        className="absolute bottom-2 z-[-1] left-10 w-9"
+        className="absolute bottom-2 z-[-1] top-[28%] left-[10%] w-9 max-sm:top-[5%] max-sm:left-[0%]"
       />
       <img
-        src="/Vector - Copie.svg"
+        src="/rond.svg"
         alt="element"
-        className="absolute z-[-1] top-8 left-[13%] w-9 "
+        className="absolute z-[-1] top-[15%] left-[18%] w-9  max-sm:top-[15%] max-sm:left-[80%]"
       />
-      <img src="/Vector (2).png" alt=""
-        className="absolute z-[-1] left-[57%] top-[60%] w-20"
-
+      <img
+        src="/scrue.png"
+        alt=""
+        className="absolute z-[-1] left-[5%] bottom-[30%] w-20"
       />
-      <img src="/Group.png" alt=""
-        className="absolute z-[-1] right-20 top-3 w-20"
-
-      /> */}
+      <img
+        src="/Group.png"
+        alt=""
+        className="absolute z-[-1] right-20 top-[50%] w-20"
+      />
+      {/* <div className=" h-[300px] "></div>  */}
     </div>
   );
 };

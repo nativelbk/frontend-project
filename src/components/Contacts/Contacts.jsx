@@ -11,12 +11,12 @@ import { styles } from "../../style";
 
 export default function Conatcts() {
   return (
-    <div className="min-h-[5vh] overflow-x-hidden " id="contact">
-      <div className={`${styles.paddingTittle} max-sm:mb-3`}>
+    <div className="min-h-[50vh] overflow-x-hidden mt-20" id="contact">
+      <div className={` max-sm:mb-3 max-w-[50%] mx-auto max-lg:max-w-[80%] max-lg:mx-auto `}>
         <Title title={"Contact"} />
       </div>
-      <section className="flex flex-col justify-center gap-10 w-fit mx-auto items-center ">
-        <div className="flex  items-center justify-center gap-[150px] max-lg:gap-[30px] max-md:flex-col-reverse max-[784px]:gap-[50px] ">
+      <section className="flex flex-col justify-center gap-10  items-center ">
+        <div className="flex  items-center justify-center gap-[200px] max-2xl:gap-[100px] max-lg:gap-[30px] max-md:flex-col-reverse max-[784px]:gap-[50px] ">
           <div className="text-white  ">
             <h4 className="font-semibold text-[24px] ">GET IN TOUCH</h4>
             <p className="font-medium ">Let&apos;s work together</p>

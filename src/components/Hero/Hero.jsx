@@ -5,10 +5,11 @@ import HeroText from "./HeroText";
 import HeroImage from "./HeroImage";
 const Hero = () => {
   return (
-    <div className="min-h-[100vh] max-w-full overflow-hidden relative flex max-md:mt-[100px] max-sm:mt-20  my-auto" id="home">
-      <main 
-        className="container px-10  flex flex-row max-lg:justify-center items-center mx-auto xl:justify-evenly  max-md:flex-col max-md:justify-center max-sm:mb-8" 
-      >
+    <div
+      className="min-h-[100vh]  max-w-full overflow-hidden relative flex max-md:mt-[100px] max-sm:mt-20 "
+      id="home"
+    >
+      <main className=" w-[2000px]  justify-around  flex flex-row max-lg:mx max-lg:justify-center items-center mx-auto max-md:flex-col  max-lg:px-8">
         <div className="max-md:flex">
           <HeroText />
         </div>
@@ -16,7 +17,6 @@ const Hero = () => {
           <HeroImage />
         </div>
       </main>
-      <div className=" h-[300px] "></div>
       <img
         src="/circle.svg"
         alt="element"
@@ -37,14 +37,17 @@ const Hero = () => {
         alt="element"
         className="absolute z-[-1] top-[15%] left-[18%] w-9  max-sm:top-[15%] max-sm:left-[80%]"
       />
-      <img src="/scrue.png" alt=""
+      <img
+        src="/scrue.png"
+        alt=""
         className="absolute z-[-1] left-[5%] bottom-[30%] w-20"
-
       />
-      <img src="/Group.png" alt=""
+      <img
+        src="/Group.png"
+        alt=""
         className="absolute z-[-1] right-20 top-[50%] w-20"
-
       />
+      {/* <div className=" h-[300px] "></div>  */}
     </div>
   );
 };

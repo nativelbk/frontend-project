@@ -112,7 +112,7 @@
 }
 
 .blr {
-  filter: blur(180px);
+  filter: blur(280px);
   width: 500px;
   height: 200px;
 }

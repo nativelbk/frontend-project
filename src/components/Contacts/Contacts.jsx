@@ -12,7 +12,9 @@ import { styles } from "../../style";
 export default function Conatcts() {
   return (
     <div className="min-h-[50vh] overflow-x-hidden mt-20" id="contact">
-      <div className={` max-sm:mb-3 max-w-[50%] mx-auto max-lg:max-w-[80%] max-lg:mx-auto `}>
+      <div
+        className={` max-sm:mb-3 max-w-[50%] mx-auto max-lg:max-w-[80%] max-lg:mx-auto `}
+      >
         <Title title={"Contact"} />
       </div>
       <section className="flex flex-col justify-center gap-10  items-center ">
@@ -37,7 +39,7 @@ export default function Conatcts() {
                 type={" "}
               />
               <Contact
-                contactItem={"http://www.linkedin.com/in/ando-nirina"}
+                contactItem={"Ando Nirina"}
                 icon={<FaLinkedin className="text-[30px] " />}
                 type={"linkedin"}
               />

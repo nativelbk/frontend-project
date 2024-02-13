@@ -21,7 +21,7 @@ import { motion } from "framer-motion";
 
 function App() {
   return (
-    <main className="flex overflow-x-hidden  relative flex-col ">
+    <main className="flex overflow-x-hidden relative flex-col ">
       <Navbar />
       {/* <img
         src="/Achernar.svg"
@@ -56,9 +56,11 @@ function App() {
       <Hero />
       <About />
       <Experience />
-      <Skills />
-      <Projects />
-      <Conatcts />
+      <div className="flex overflow-x-hidden justify-between  max-sm:gap-20 relative flex-col ">
+        <Skills />
+        <Projects />
+        <Conatcts />
+      </div>
       <img
         src="/Achernar.svg"
         className=" z-[-1] absolute right-[-20%]  top-[-60px]   "

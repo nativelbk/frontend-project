@@ -8,10 +8,14 @@ import { MdEmail } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaPhoneAlt } from "react-icons/fa";
 import { styles } from "../../style";
+import Footer from "../Footer/Footer";
 
 export default function Conatcts() {
   return (
-    <div className="min-h-[50vh] overflow-x-hidden mt-20" id="contact">
+    <div
+      className=" md:min-h-[100vh] relative max-md:h-auto overflow-x-hidden mt-20"
+      id="contact"
+    >
       <div
         className={` max-sm:mb-3 max-w-[50%] mx-auto max-lg:max-w-[80%] max-lg:mx-auto `}
       >

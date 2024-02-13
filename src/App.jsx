@@ -21,7 +21,7 @@ import { motion } from "framer-motion";
 
 function App() {
   return (
-    <main className="flex overflow-x-hidden relative flex-col ">
+    <main className="flex overflow-x-hidden  max-md:gap-5 relative flex-col ">
       <Navbar />
       {/* <img
         src="/Achernar.svg"
@@ -53,10 +53,12 @@ function App() {
           className=" blr  "
         ></motion.div>
       </div>
-      <Hero />
-      <About />
-      <Experience />
-      <div className="flex overflow-x-hidden justify-between  max-sm:gap-20 relative flex-col ">
+      <div className="flex flex-col max-md:gap-40">
+        <Hero />
+        <About />
+        <Experience />
+      </div>
+      <div className="flex overflow-x-hidden justify-between  max-sm:gap-96 relative flex-col ">
         <Skills />
         <Projects />
         <Conatcts />

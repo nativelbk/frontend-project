@@ -9,7 +9,7 @@ const Hero = () => {
       className="min-h-[100vh]  max-w-full overflow-hidden relative flex max-md:mt-[100px] max-sm:mt-20 "
       id="home"
     >
-      <main className=" w-[2000px]  justify-around  flex flex-row max-lg:mx max-lg:justify-center items-center mx-auto max-md:flex-col  max-lg:px-8">
+      <main className=" w-[2000px]  justify-around max-[2256px]:justify-evenly flex flex-row max-lg:mx max-lg:justify-center items-center mx-auto max-md:flex-col  max-lg:px-8">
         <div className="max-md:flex">
           <HeroText />
         </div>
@@ -30,7 +30,7 @@ const Hero = () => {
       <img
         src="/etoile.svg"
         alt="element"
-        className="absolute bottom-2 z-[-1] top-[28%] left-[10%] w-9 max-sm:top-[5%] max-sm:left-[0%]"
+        className="absolute bottom-2 z-[-1] top-[28%] left-[8%] w-9 max-sm:top-[5%] max-sm:left-[0%]"
       />
       <img
         src="/rond.svg"

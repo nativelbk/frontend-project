@@ -18,7 +18,7 @@ import Title from "./components/Title/Title";
 import Navbar from "./components/Navbar/Navbar";
 import Hero from "./components/Hero/Hero";
 import { motion } from "framer-motion";
-
+import Particles from "./components/Hero/Particles";
 function App() {
   return (
     <main className="flex overflow-x-hidden  max-md:gap-5 relative flex-col ">
@@ -67,6 +67,7 @@ function App() {
         src="/Achernar.svg"
         className=" z-[-1] absolute right-[-20%]  top-[-60px]   "
       />
+      <Particles/>
       <Footer />
     </main>
   );

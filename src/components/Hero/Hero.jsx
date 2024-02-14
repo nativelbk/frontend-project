@@ -3,6 +3,7 @@
 import React from "react";
 import HeroText from "./HeroText";
 import HeroImage from "./HeroImage";
+import AboutImage from "../About/AboutImage";
 const Hero = () => {
   return (
     <div

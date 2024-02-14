@@ -13,15 +13,15 @@ import Footer from "../Footer/Footer";
 export default function Conatcts() {
   return (
     <div
-      className="  md:min-h-[100vh] relative max-md:h-auto overflow-x-hidden mt-20"
+      className="  md:min-h-[50vh] relative max-md:h-auto flex justify-center items-center overflow-x-hidden mt-20"
       id="contact"
     >
       <section className="flex flex-col justify-center gap-10 items-center ">
-      <div
-        className={` max-sm:mb-3 max-w-[50%] mx-auto max-lg:max-w-[80%] max-md:max-w-[70%]max-md:mx-auto max-md:mt-10 max-lg:mx-auto `}
-      >
-        <Title title={"Contact"} />
-      </div>
+        <div
+          className={` max-sm:mb-3 max-w-[50%] mx-auto max-lg:max-w-[80%] max-md:max-w-[70%]max-md:mx-auto max-md:mt-10 max-lg:mx-auto `}
+        >
+          <Title title={"Contact"} />
+        </div>
         <div className="flex  items-center justify-center gap-[200px]  max-2xl:gap-[100px] min-[2000px]:gap-[330px]   max-lg:gap-[30px] max-md:flex-col-reverse max-[784px]:gap-[50px] ">
           <div className="text-white  ">
             <h4 className="font-semibold text-[24px] ">GET IN TOUCH</h4>

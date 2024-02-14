@@ -15,7 +15,7 @@ const Navbar = () => {
   const [shouldOpen, setShouldOpen] = useState(false);
   const handleOnClose = () => setShouldOpen(false);
   return (
-    <header className="z-30">
+    <header className=" z-[9999999]">
       <div className="w-full  blur1 mx-auto flex  fixed  items-center   z-10  md:gap-10  max-md:justify-between max-sm:px-5 max-md:px-10 justify-around overflow-x-hidden py-3 ">
         <button className="px-3 bg-[#1976D2] hover:bg-sky-700 font-bold text-white py-2 rounded-md">
           ANDO NIRINA

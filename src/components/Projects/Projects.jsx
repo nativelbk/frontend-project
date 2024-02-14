@@ -9,9 +9,9 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="  relative mt-20 mx-auto  max-lg:max-w-full max-md:max-w-[90%] max-sm:max-w-full gap-10 flex flex-col h-[90vh] items-center justify-center "
+      className=" min-h-screen  mx-auto flex items-center justify-center"
     >
-      <div className="absolute z-[-1] top-16  right-[0]  ">
+      <div className="absolute left-0 z-[-5]">
         <motion.div
           animate={{
             background: ["#1976D2", "#FF4D6D"],
@@ -37,30 +37,34 @@ export default function Projects() {
           className=" blr  "
         ></motion.div>
       </div>
-      <div className="flex justify-center 2xl:w-[50vw] relative 2xl:justify-around mx-auto flex-nowrap max-md:flex-col max-lg:flex-wrap  max-lg:gap-6 max-[863px]:w-fit max-[863px]:mx-auto  gap-20 max-sm:gap-10">
+      {/* fix responsive titre project + all projet */}
+      <div className="flex gap-10 justify-center flex-col items-start  ">
         <div
-          className={` max-lg:ml-10 absolute left-0 top-[-100px] max-md:ml-0 max-sm:mt-10 max-sm:mb-3`}
+          className="max-lg:pl-10"
         >
           <Title title={"Project"} />
         </div>
-        <Project
-          title={"Mademoiselleai"}
-          description={"A website with AI solutions and automates"}
-          imageSrc={"/mademoiselleai.svg"}
-          link={"https://www.mademoiselleai.com"}
-        />
-        <Project
-          title={"Grouillez vous"}
-          description={"A website with highly efficient GPT powered chatbot"}
-          imageSrc={"/Grouillez-vous.svg"}
-          link={"https://www.grouillez-vous.com"}
-        />
-        <Project
-          title={"Tradago.ai"}
-          description={"An AI-powered trading platform"}
-          imageSrc={"/tragado-ai.svg"}
-          link={"https://www.tradago.ai"}
-        />
+        {/* container mis le projet global */}
+        <div className="flex max-w-[1000px] flex-wrap gap-5 justify-center items-center 2xl:max-w-[2000px]  2xl:gap-[250px]">
+          <Project
+            title={"Mademoiselleai"}
+            description={"A website with AI solutions and automates"}
+            imageSrc={"/mademoiselleai.svg"}
+            link={"https://www.mademoiselleai.com"}
+          />
+          <Project
+            title={"Grouillez vous"}
+            description={"A website with highly efficient GPT powered chatbot"}
+            imageSrc={"/Grouillez-vous.svg"}
+            link={"https://www.grouillez-vous.com"}
+          />
+          <Project
+            title={"Tradago.ai"}
+            description={"An AI-powered trading platform"}
+            imageSrc={"/tragado-ai.svg"}
+            link={"https://www.tradago.ai"}
+          />
+        </div>
       </div>
     </section>
   );

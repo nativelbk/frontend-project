@@ -9,7 +9,7 @@ export default function AboutImage() {
       transition={{ duration: 0.5 }}
       className="max-w-[350px] max-lg:w-[300px] "
     >
-      <img src="/about-image.svg" />
+      <img src="/about-image.png" />
     </motion.section>
   );
 }

@@ -1,5 +1,5 @@
 /** @format */
-
+import Typewriter from 'typewriter-effect';
 import React from "react";
 import { styles } from "../../style";
 const HeroText = () => {
@@ -11,6 +11,7 @@ const HeroText = () => {
         >
           HELLO!!!
         </h1>
+
         <h2
           className={`${styles.heroNameText} max-w-[500px] max-[375px]:text[24px] max-[410px]:text-[28px] font-bold`}
         >
@@ -19,7 +20,13 @@ const HeroText = () => {
       </div>
       <div className="mt-6 max-w-[400px] max-lg:max-w-[300px] max-md:max-w-[400px] ">
         <button className="w-[100%] text-white bg-blue  h-[50px] max-sm:text-[14px] rounded-md mb-6 hover:bg-indigo-500">
-          PYTHON DEVELOPER-DATA-WEB
+          <Typewriter
+            options={{
+              strings: [' PYTHON', 'DEVELOPER-DATA-WEB'],
+              autoStart: true,
+              loop: true,
+            }}
+          />
         </button>
         <br />
         <a

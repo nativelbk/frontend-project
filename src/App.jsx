@@ -34,7 +34,7 @@ function App() {
             scale: [1, 0.95, 1.1],
           }}
           transition={{ duration: 3, repeat: Infinity, repeatType: "mirror" }}
-          className=" blr "
+          className=" blr max-sm:hidden"
         ></motion.div>
         <motion.div
           animate={{
@@ -42,7 +42,7 @@ function App() {
             scale: [1, 0.95, 1.1],
           }}
           transition={{ duration: 3, repeat: Infinity, repeatType: "mirror" }}
-          className=" blr  "
+          className=" blr max-sm:hidden "
         ></motion.div>
         <motion.div
           animate={{
@@ -50,7 +50,7 @@ function App() {
             scale: [1, 0.95, 1.1],
           }}
           transition={{ duration: 3, repeat: Infinity, repeatType: "mirror" }}
-          className=" blr  "
+          className=" blr max-sm:hidden  "
         ></motion.div>
       </div>
       <div className="flex flex-col max-md:gap-40">

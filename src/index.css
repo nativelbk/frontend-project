@@ -16,11 +16,14 @@
     rgba(255, 77, 109, 1) 44%
   );
 }
+
 .gradient-border {
   position: relative;
+  /* background: #ffffff !important ; */
+  z-index: 9999;
 }
 
-.gradient-border::before {
+.gradient-border::after {
   content: "";
   background: linear-gradient(
     147deg,
@@ -32,10 +35,11 @@
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: -1;
+  z-index: 0;
   margin: -3px;
   border-radius: 999px;
 }
+
 .back-gradient2 {
   background: linear-gradient(
     90deg,

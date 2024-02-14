@@ -22,9 +22,10 @@ const HeroText = () => {
         <button className="w-[100%] text-white bg-blue  h-[50px] max-sm:text-[14px] rounded-md mb-6 hover:bg-indigo-500">
           <Typewriter
             options={{
-              strings: [' PYTHON', 'DEVELOPER-DATA-WEB'],
+              strings: [' PYTHON DEVELOPER', 'DATA','WEB DEVELOPER'],
               autoStart: true,
               loop: true,
+              
             }}
           />
         </button>

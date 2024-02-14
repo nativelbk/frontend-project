@@ -25,7 +25,6 @@ const HeroText = () => {
               strings: [' PYTHON DEVELOPER', 'DATA','WEB DEVELOPER'],
               autoStart: true,
               loop: true,
-              
             }}
           />
         </button>

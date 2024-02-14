@@ -5,8 +5,11 @@ import AboutText from "./AboutText";
 
 export default function About() {
   return (
-    <div className="min-h-[100vh] max-w-full overflow-hidden  flex items-center justify-center">
-      <section id="about" className=" flex flex-col gap-20">
+    <div
+      className="min-h-[100vh] max-w-full overflow-hidden  flex items-center justify-center"
+      id="about"
+    >
+      <section className=" flex flex-col gap-20">
         <div className="w-[2000px]  justify-around  max-2xl:w-screen  max-lg:gap-20 flex flex-row max-lg:mx max-lg:justify-center items-center mx-auto max-md:flex-col  max-lg:px-8">
           <AboutImage />
           <AboutText />

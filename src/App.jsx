@@ -66,10 +66,6 @@ function App() {
           <Projects />
           <Conatcts />
         </div>
-        <img
-          src="/Achernar.svg"
-          className=" z-[-1] absolute right-[-20%]  top-[-60px]   "
-        />
         <Footer />
       </main>
     </section>

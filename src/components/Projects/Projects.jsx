@@ -9,7 +9,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="  relative mt-20 max-lg:max-w-full max-md:max-w-[90%] max-sm:max-w-full gap-10 flex flex-col h-screen items-center justify-center "
+      className="  relative mt-20 mx-auto  max-lg:max-w-full max-md:max-w-[90%] max-sm:max-w-full gap-10 flex flex-col h-[90vh] items-center justify-center "
     >
       <div className="absolute z-[-1] top-16  right-[0]  ">
         <motion.div
